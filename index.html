@@ -26,6 +26,8 @@
           flex
           items-center
           h-10
+          lg:h-16
+          md:h-14
           lg:bg-gray-50
           md:bg-gray-50
           justify-around
@@ -36,7 +38,7 @@
         <a
           class="
             flex
-            space-x-4
+            space-x-1
             items-center
             justify-center
             text-xs
@@ -83,6 +85,31 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
+        <!--join us-->
+        <a
+          class="flex space-x-4 items-center justify-center lg:flex md:flex"
+          href="#contactus"
+        >
+          <button
+            class="
+              flex
+              lg:py-2
+              text-white
+              border-0
+              px-8
+              focus:outline-none
+              hover:bg-indigo-600
+              rounded-lg
+              text-lg
+              hidden
+              lg:flex
+              md:flex
+            "
+            style="background-color: #08cc7f"
+          >
+            Join Us
+          </button>
+        </a>
       </div>
       <!--navigation-->
       <nav
@@ -172,7 +199,7 @@
                   px-4
                   text-sm
                 "
-                href="#about_us"
+                href="#mission"
                 >ABOUT</a
               >
             </li>
@@ -187,7 +214,7 @@
                   px-4
                   text-sm
                 "
-                href="#"
+                href="#about_us"
                 >SERVICES</a
               >
             </li>
@@ -217,9 +244,40 @@
                   px-4
                   text-sm
                 "
-                href="#"
+                href="footer"
                 >CONTACTS</a
               >
+            </li>
+            <li>
+              <a
+                class="
+                  flex
+                  space-x-4
+                  items-center
+                  justify-center
+                  lg:flex
+                  md:flex
+                "
+                href="#contactus"
+              >
+                <button
+                  class="
+                    mx-auto
+                    text-white
+                    border-0
+                    px-5
+                    focus:outline-none
+                    hover:bg-indigo-600
+                    rounded
+                    text-lg
+                    lg:hidden
+                    md:hidden
+                  "
+                  style="background-color: #08cc7f"
+                >
+                  Join Us
+                </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -372,6 +430,7 @@
       <section
         class="text-gray-600 body-font"
         style="background-color: #f3f4f5"
+        id="mission"
       >
         <div class="container px-5 py-24 mx-auto">
           <div
@@ -1562,7 +1621,7 @@
       </div>
       <!--end blog-->
       <!--start contact-->
-      <section class="text-gray-600 body-font relative">
+      <section class="text-gray-600 body-font relative" id="contactus">
         <form
           action="https://formsubmit.co/af01c080838390a68ac8d227c9c1aa30"
           method="POST"
@@ -1572,7 +1631,11 @@
           <!--Disable captcha-->
           <input type="hidden" name="_captcha" value="false" />
           <!--Thank You-->
-          <input type="hidden" name="_next" value="https://rashid8740.github.io/nido_clone/thanks.html">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://rashid8740.github.io/nido_clone/thanks.html"
+          />
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
               <h1
@@ -1585,7 +1648,7 @@
                   text-gray-900
                 "
               >
-                Contact Us
+                Join Us Today
               </h1>
               <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
                 Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
@@ -1717,7 +1780,7 @@
                     text-center
                   "
                 >
-                  <a class="text-indigo-500">example@email.com</a>
+                  <a class="text-indigo-500">info@nido.org</a>
                   <p class="leading-normal my-5">
                     49 Smith St. <br />Saint Cloud, MN 56301
                   </p>
@@ -1797,7 +1860,7 @@
       <!--end contact-->
 
       <!--footer-->
-      <section class="bg-gray-100">
+      <section class="bg-gray-100" id="footer">
         <div
           class="
             px-4
